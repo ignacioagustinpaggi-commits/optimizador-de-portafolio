@@ -69,12 +69,29 @@ h2,h3,h4 { font-family:'Space Grotesk',sans-serif; color:#0A2342; }
 
 /* ── Sidebar ── */
 [data-testid="stSidebar"] {
-    background: linear-gradient(175deg, #0A2342 0%, #0D3B6E 100%) !important;
+    background: #1C3557 !important;
 }
-[data-testid="stSidebar"] *          { color: #E8EAF6 !important; }
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] span,
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] .stMarkdown { color: #E8EAF6 !important; }
 [data-testid="stSidebar"] h2,
 [data-testid="stSidebar"] h3,
-[data-testid="stSidebar"] strong     { color: #FFFFFF !important; }
+[data-testid="stSidebar"] strong      { color: #FFFFFF !important; }
+
+/* inputs visibles sobre fondo oscuro */
+[data-testid="stSidebar"] input { 
+    color: #000000 !important; 
+    background: #FFFFFF !important;
+    border-radius: 5px !important;
+}
+[data-testid="stSidebar"] [data-baseweb="input"] {
+    background: #FFFFFF !important;
+    border-radius: 5px !important;
+}
+[data-testid="stSidebar"] [data-baseweb="input"] input {
+    color: #000000 !important;
+}
 [data-testid="stSidebar"] .stButton>button {
     background: linear-gradient(135deg,#2196F3,#00BFA5);
     color:white !important; font-family:'Space Grotesk',sans-serif;
