@@ -122,6 +122,34 @@ h2,h3,h4 { font-family:'Space Grotesk',sans-serif; color:#0A2342; }
 .foda-a{background:#FFEBEE;border-top:3px solid #c0392b;}
 
 footer { display:none; }
+
+/* ── Inputs en sidebar: texto visible sobre fondo oscuro ── */
+[data-testid="stSidebar"] input,
+[data-testid="stSidebar"] textarea,
+[data-testid="stSidebar"] [data-baseweb="input"] input,
+[data-testid="stSidebar"] [data-baseweb="textarea"] textarea {
+    color: #FFFFFF !important;
+    background-color: rgba(255,255,255,0.12) !important;
+    border: 1px solid rgba(255,255,255,0.25) !important;
+    border-radius: 6px !important;
+}
+[data-testid="stSidebar"] input::placeholder,
+[data-testid="stSidebar"] textarea::placeholder {
+    color: rgba(255,255,255,0.45) !important;
+}
+[data-testid="stSidebar"] [data-baseweb="select"] div,
+[data-testid="stSidebar"] [data-baseweb="select"] span {
+    color: #FFFFFF !important;
+    background-color: rgba(255,255,255,0.12) !important;
+}
+[data-testid="stSidebar"] [data-testid="stDateInput"] input {
+    color: #FFFFFF !important;
+    background-color: rgba(255,255,255,0.12) !important;
+}
+[data-testid="stSidebar"] [data-testid="stNumberInput"] input {
+    color: #FFFFFF !important;
+    background-color: rgba(255,255,255,0.12) !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
